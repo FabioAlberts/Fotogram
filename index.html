@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotogram</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="script" src="script.js"></link>
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
     <main>
         <div class="gallery">
             <h2>Your personal photo album</h2>
-            <section class="up_line">
+            <section class="up_line" onclick="openDialog(photoDialog)">
                 <img src="img/kanenori-lake-7938396.jpg" alt="lake">
                 <img src="img/kanenori-trail-8117575.jpg" alt="trail">
                 <img src="img/leolevng-castle-5476737.jpg" alt="castle">
@@ -24,13 +24,28 @@
                 <img src="img/chikilino-turtle-5568624_1920.jpg" alt="turtle">
                 <img src="img/corgaasbeek-lamb-3341618_1920.jpg" alt="lamb">
             </section>
-            <section class="down_line">
+            <section class="down_line" onclick="openDialog(photoDialog)">
                 <img src="img/marucha-dubai-3188864_1920.jpg" alt="dubai">
                 <img src="img/rperucho-building-10122862_1920.jpg" alt="building">
                 <img src="img/kanenori-landscape-7534634.jpg" alt="landscape">
                 <img src="img/wikiimages-hurricane-benilde-58071.jpg" alt="storm">
                 <img src="img/kanenori-rainforest-4350845.jpg" alt="rainforest">
             </section>
+            <dialog id="photoDialog">
+                <header>
+                    <h3>Photo Title</h3>
+                    <button onclick="closeDialog()">X</button>
+                </header>
+                <main>
+
+                </main>
+                <footer>
+                    <button></button>
+                    <p></p>
+                    <button></button>
+                </footer>
+                <script src="script.js"></script>
+            </dialog>
         </div>
     </main>
 
