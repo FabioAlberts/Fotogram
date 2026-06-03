@@ -7,7 +7,6 @@ header {
     background-color: #09212A;
     color: white;
     height: 128px;
-    width: 100%;
     padding: 20px 140px;
 }
 
@@ -86,4 +85,38 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.galleryDialog {
+    background-color: #09212A;
+    border: none;
+    border-radius: 40px;
+    width: 690px;
+    height: 675px;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.arrow {
+    background-color: #FD5B4F;
+    border-radius: 50%;
+    border: none;
+    color: #FD5B4F;
+    font-size: 48px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
