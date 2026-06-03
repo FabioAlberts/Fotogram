@@ -6,7 +6,7 @@ body {
 header {
     background-color: #09212A;
     color: white;
-    height: 100px;
+    height: 128px;
     width: 100%;
     padding: 20px 140px;
 }
@@ -64,5 +64,26 @@ main {
 footer {
     background-color: #09212A;
     color: white;
-    height: 100px;
+    height: 128px;
+}
+
+.academy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 16px;
+}
+
+.academy h6 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
