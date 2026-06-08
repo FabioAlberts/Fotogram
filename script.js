@@ -36,8 +36,10 @@ function render(){
         img.alt = randomTitles[i];
         content.appendChild(img);
         contentRef.innerHTML += 
-                                `<img src="${randomImages[i]}" 
-                                alt="${randomTitles[i]}">`;
+                                `<div id="content">
+                                <img src="${randomImages[i]}" 
+                                alt="${randomTitles[i]}">
+                                </div>`;
     }
 }
 
