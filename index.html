@@ -17,12 +17,12 @@
         <div class="gallery">
             <section class="first_row">
                 <img src="./img/12019-hurricane-92968.jpg" alt="Hurricane" onclick="openDialog()">
-                <img src="./img/chikilino-turtle-5568624_1920.jpg" alt="Turtle">
-                <img src="./img/corgaasbeek-lamb-3341618_1920.jpg" alt="Lamb">
-                <img src="./img/kanenori-lake-7938396.jpg" alt="Lake">
-                <img src="./img/kanenori-landscape-7534634.jpg" alt="Landscape">
-                <img src="./img/kanenori-trail-8117575.jpg" alt="Trail">
-                <img src="./img/leolevng-castle-5476737.jpg" alt="Castle">
+                <img src="./img/chikilino-turtle-5568624_1920.jpg" alt="Turtle" onclick="openDialog2()">
+                <img src="./img/corgaasbeek-lamb-3341618_1920.jpg" alt="Lamb" onclick="openDialog()">
+                <img src="./img/kanenori-lake-7938396.jpg" alt="Lake" onclick="openDialog()">
+                <img src="./img/kanenori-landscape-7534634.jpg" alt="Landscape" onclick="openDialog()">
+                <img src="./img/kanenori-trail-8117575.jpg" alt="Trail" onclick="openDialog()">
+                <img src="./img/leolevng-castle-5476737.jpg" alt="Castle" onclick="openDialog()">
             </section>
             <section class="second_row">
                 <img src="./img/kanenori-rainforest-4350845.jpg" alt="Rainforest">
@@ -30,7 +30,9 @@
                 <img src="./img/raniramli-ai-generated-8498983.png" alt="AI Generated">
                 <img src="./img/rperucho-building-10122862_1920.jpg" alt="Building">
                 <img src="./img/wikiimages-hurricane-benilde-58071.jpg" alt="Hurricane">
-            </section>
+            </section>           
+        </div>
+        <div>
             <dialog class="modal" id="photoDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>12019-hurricane-92968.jpg</h3>
@@ -40,7 +42,27 @@
                     <img src="./img/12019-hurricane-92968.jpg" alt="Hurricane">
                 </main>
                 <footer class="dialog_footer">
+                    <button class="arrow">&larr;</button>
+                    <p>1/12</p>
+                    <button class="arrow">&rarr;</button>
+                </footer>
+                
+            </dialog>
+        </div>
 
+        <div>
+            <dialog class="modal" id="photoDialog2">
+                <header class="dialog_header" id="dialogHeader">
+                    <h3>chikilino-turtle-5568624_1920.jpg</h3>
+                    <button id="closeDialog2" onclick="closeDialog2()">X</button>
+                </header>
+                <main class="dialog_main">
+                    <img src="./img/chikilino-turtle-5568624_1920.jpg" alt="Turtle">
+                </main>
+                <footer class="dialog_footer">
+                    <button class="arrow">&larr;</button>
+                    <p>1/12</p>
+                    <button class="arrow">&rarr;</button>
                 </footer>
                 
             </dialog>

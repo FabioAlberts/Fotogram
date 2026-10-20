@@ -32,7 +32,7 @@ header h1 {
     height: 150px;
     cursor: pointer;
     border-radius: 16px;
-    border: 2px;
+    border: 2px solid black;
 }
 
 .first_row {
@@ -61,8 +61,11 @@ footer {
     color: white;
     border-radius: 16px;
     padding: 20px;
-    width: 600px;
-    height: 400px;
+    width: 720px;
+    height: 540px;
+    border: 2px solid black;
+    transform: translateX(0px);
+    transition: all 5s ease-in;
 }
 
 .dialog_header {
@@ -82,16 +85,47 @@ button#closeDialog {
     cursor: pointer;
 }
 
-dialog img {
-    width: 160px;
-    height: 160px;
+
+.dialog_main {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+
+
+.modal img {
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
 }
 
 .dialog_footer {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
     background-color: #06171E;
+}
+
+.arrow {
+    height: 40px;
+    width: 40px;
+    margin: 20px 20px;
+    background-color: #06171E;
+    color: orange;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal::backdrop {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 5s ease-in;
+}
+
+.modal.opened::backdrop {
+    opacity: 1;
+    transition: all 5s ease-in;
 }
