@@ -50,3 +50,39 @@ const dialogRef4 = document.getElementById('photoDialog4')
         dialogRef4.close();
         dialogRef4.classList.remove('opened');
     }
+
+//Öffnen des fünften Dialogs über showModal() und hinzufügen der Klasse opened
+const dialogRef5 = document.getElementById('photoDialog5')
+    function openDialog5(){
+        dialogRef5.showModal();
+        dialogRef5.classList.add('opened');
+    }
+// Schließen des fünften Dialogs über close() und entfernen der Klasse opened
+    function closeDialog5(){
+        dialogRef5.close();
+        dialogRef5.classList.remove('opened');
+    }
+
+//Öffnen des sechsten Dialogs über showModal() und hinzufügen der Klasse opened
+const dialogRef6 = document.getElementById('photoDialog6')
+    function openDialog6(){
+        dialogRef6.showModal();
+        dialogRef6.classList.add('opened');
+    }
+// Schließen des sechsten Dialogs über close() und entfernen der Klasse opened
+    function closeDialog6(){
+        dialogRef6.close();
+        dialogRef6.classList.remove('opened');
+    }
+
+//Öffnen des siebten Dialogs über showModal() und hinzufügen der Klasse opened
+const dialogRef7 = document.getElementById('photoDialog7')
+    function openDialog7(){
+        dialogRef7.showModal();
+        dialogRef7.classList.add('opened');
+    }
+// Schließen des siebten Dialogs über close() und entfernen der Klasse opened
+    function closeDialog7(){
+        dialogRef7.close();
+        dialogRef7.classList.remove('opened');
+    }
