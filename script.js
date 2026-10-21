@@ -146,3 +146,12 @@ const dialogRef12 = document.getElementById('photoDialog12')
         dialogRef12.close();
         dialogRef12.classList.remove('opened');
     }
+
+// Funktion zum Wechseln der Dialoge
+let currentDialogIndex = 1;
+
+for (let i = 1; i <= 12; i++) {
+    const dialog = document.getElementsByClassName(`mySlides`)[i - 1];
+    const prevButton = dialog.querySelector('.prev');
+    const nextButton = dialog.querySelector('.next');
+    }
