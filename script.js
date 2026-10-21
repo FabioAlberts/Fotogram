@@ -148,10 +148,18 @@ const dialogRef12 = document.getElementById('photoDialog12')
     }
 
 // Funktion zum Wechseln der Dialoge
-let i = 0;
-let mySlides = document.getElementsByClassName("mySlides");
 
-for (let i = 1; i <= 12; i++) {
-    const dialog = document.getElementsByClassName(`mySlides`)[i - 1];
-    
+let currentDialogIndex = 0;
+
+function changeDialog(direction) {
+    const dialogs = document.querySelectorAll('dialog');
+    dialogs[currentDialogIndex].close();
+    currentDialogIndex += direction;
+    if (currentDialogIndex >= dialogs.length) {
+        currentDialogIndex = 0;
     }
+    if (currentDialogIndex < 0) {
+        currentDialogIndex = dialogs.length - 1;
+    }
+    dialogs[currentDialogIndex].showModal();
+}
