@@ -122,10 +122,10 @@ button#closeDialog {
 .modal::backdrop {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: all 1.5s ease-in;
+    transition: all 0s ease-in;
 }
 
 .modal.opened::backdrop {
     opacity: 1;
-    transition: all 1.5s ease-in;
+    transition: all 0s ease-in;
 }

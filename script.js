@@ -163,3 +163,4 @@ function changeDialog(direction) {
     }
     dialogs[currentDialogIndex].showModal();
 }
+//Es frunktioniert und wird auch nicht mehr angefasst!!!
