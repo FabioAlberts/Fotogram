@@ -86,3 +86,63 @@ const dialogRef7 = document.getElementById('photoDialog7')
         dialogRef7.close();
         dialogRef7.classList.remove('opened');
     }
+
+//Öffnen des achten Dialogs über showModal() und hinzufügen der Klasse opened
+const dialogRef8 = document.getElementById('photoDialog8')
+    function openDialog8(){
+        dialogRef8.showModal();
+        dialogRef8.classList.add('opened');
+    }
+// Schließen des achten Dialogs über close() und entfernen der Klasse opened
+    function closeDialog8(){
+        dialogRef8.close();
+        dialogRef8.classList.remove('opened');
+    }
+
+//Öffnen des neunten Dialogs über showModal() und hinzufügen der Klasse opened
+const dialogRef9 = document.getElementById('photoDialog9')
+    function openDialog9(){
+        dialogRef9.showModal();
+        dialogRef9.classList.add('opened');
+    }
+// Schließen des neunten Dialogs über close() und entfernen der Klasse opened
+    function closeDialog9(){
+        dialogRef9.close();
+        dialogRef9.classList.remove('opened');
+    }
+
+//Öffnen des zehnten Dialogs über showModal() und hinzufügen der Klasse opened
+const dialogRef10 = document.getElementById('photoDialog10')
+    function openDialog10(){
+        dialogRef10.showModal();
+        dialogRef10.classList.add('opened');
+    }
+// Schließen des zehnten Dialogs über close() und entfernen der Klasse opened
+    function closeDialog10(){
+        dialogRef10.close();
+        dialogRef10.classList.remove('opened');
+    }
+
+//Öffnen des elften Dialogs über showModal() und hinzufügen der Klasse opened
+const dialogRef11 = document.getElementById('photoDialog11')
+    function openDialog11(){
+        dialogRef11.showModal();
+        dialogRef11.classList.add('opened');
+    }
+// Schließen des elften Dialogs über close() und entfernen der Klasse opened
+    function closeDialog11(){
+        dialogRef11.close();
+        dialogRef11.classList.remove('opened');
+    }
+
+//Öffnen des zwölften Dialogs über showModal() und hinzufügen der Klasse opened
+const dialogRef12 = document.getElementById('photoDialog12')
+    function openDialog12(){
+        dialogRef12.showModal();
+        dialogRef12.classList.add('opened');
+    }
+// Schließen des zwölften Dialogs über close() und entfernen der Klasse opened
+    function closeDialog12(){
+        dialogRef12.close();
+        dialogRef12.classList.remove('opened');
+    }
