@@ -16,27 +16,27 @@
         </div>
         <div class="gallery">
             <section class="first_row">
-                <img src="./img/12019-hurricane-92968.jpg" alt="Hurricane" onclick="openDialog()">
-                <img src="./img/chikilino-turtle-5568624_1920.jpg" alt="Turtle" onclick="openDialog2()">
-                <img src="./img/corgaasbeek-lamb-3341618_1920.jpg" alt="Lamb" onclick="openDialog3()">
-                <img src="./img/kanenori-lake-7938396.jpg" alt="Lake" onclick="openDialog4()">
-                <img src="./img/kanenori-landscape-7534634.jpg" alt="Landscape" onclick="openDialog5()">
-                <img src="./img/kanenori-trail-8117575.jpg" alt="Trail" onclick="openDialog6()">
-                <img src="./img/leolevng-castle-5476737.jpg" alt="Castle" onclick="openDialog7()">
+                <img src="./img/12019-hurricane-92968.jpg" alt="Hurricane" onclick="openDialog('hurricaneDialog')">
+                <img src="./img/chikilino-turtle-5568624_1920.jpg" alt="Turtle" onclick="openDialog('turtleDialog')">
+                <img src="./img/corgaasbeek-lamb-3341618_1920.jpg" alt="Lamb" onclick="openDialog('lambDialog')">
+                <img src="./img/kanenori-lake-7938396.jpg" alt="Lake" onclick="openDialog('lakeDialog')">
+                <img src="./img/kanenori-landscape-7534634.jpg" alt="Landscape" onclick="openDialog('landscapeDialog')">
+                <img src="./img/kanenori-trail-8117575.jpg" alt="Trail" onclick="openDialog('trailDialog')">
+                <img src="./img/leolevng-castle-5476737.jpg" alt="Castle" onclick="openDialog()">
             </section>
             <section class="second_row">
-                <img src="./img/kanenori-rainforest-4350845.jpg" alt="Rainforest" onclick="openDialog8()">
-                <img src="./img/marucha-dubai-3188864_1920.jpg" alt="Dubai" onclick="openDialog9()">
-                <img src="./img/raniramli-ai-generated-8498983.png" alt="AI Generated" onclick="openDialog10()">
-                <img src="./img/rperucho-building-10122862_1920.jpg" alt="Building" onclick="openDialog11()">
-                <img src="./img/wikiimages-hurricane-benilde-58071.jpg" alt="Hurricane" onclick="openDialog12()">
+                <img src="./img/kanenori-rainforest-4350845.jpg" alt="Rainforest" onclick="openDialog('rainforestDialog')">
+                <img src="./img/marucha-dubai-3188864_1920.jpg" alt="Dubai" onclick="openDialog('dubaiDialog')">
+                <img src="./img/raniramli-ai-generated-8498983.png" alt="AI Generated" onclick="openDialog('aiGeneratedDialog')">
+                <img src="./img/rperucho-building-10122862_1920.jpg" alt="Building" onclick="openDialog('buildingDialog')">
+                <img src="./img/wikiimages-hurricane-benilde-58071.jpg" alt="Hurricane" onclick="openDialog('hurricaneDialog')">
             </section>           
         </div>
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog">
+            <dialog class="modal" id="hurricaneDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>12019-hurricane-92968.jpg</h3>
-                    <button id="closeDialog" onclick="closeDialog()">X</button>
+                    <button id="closeDialog" onclick="closeDialog('hurricaneDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/12019-hurricane-92968.jpg" alt="Hurricane">
@@ -51,10 +51,10 @@
         </div>
 
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog2">
+            <dialog class="modal" id="turtleDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>chikilino-turtle-5568624_1920.jpg</h3>
-                    <button id="closeDialog2" onclick="closeDialog2()">X</button>
+                    <button id="closeDialog2" onclick="closeDialog('turtleDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/chikilino-turtle-5568624_1920.jpg" alt="Turtle">
@@ -69,10 +69,10 @@
         </div>
 
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog3">
+            <dialog class="modal" id="lambDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>chikilino-turtle-5568624_1920.jpg</h3>
-                    <button id="closeDialog3" onclick="closeDialog3()">X</button>
+                    <button id="closeDialog3" onclick="closeDialog('lambDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/corgaasbeek-lamb-3341618_1920.jpg" alt="Lamb">
@@ -87,10 +87,10 @@
         </div>
 
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog4">
+            <dialog class="modal" id="lakeDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>kanenori-lake-7938396.jpg</h3>
-                    <button id="closeDialog4" onclick="closeDialog4()">X</button>
+                    <button id="closeDialog4" onclick="closeDialog('lakeDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/kanenori-lake-7938396.jpg" alt="Hurricane">
@@ -105,10 +105,10 @@
         </div>
 
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog5">
+            <dialog class="modal" id="landscapeDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>kanenori-landscape-7534634.jpg</h3>
-                    <button id="closeDialog5" onclick="closeDialog5()">X</button>
+                    <button id="closeDialog5" onclick="closeDialog('landscapeDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/kanenori-landscape-7534634.jpg" alt="Landscape">
@@ -123,10 +123,10 @@
         </div>
 
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog6">
+            <dialog class="modal" id="trailDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>kanenori-trail-8117575.jpg</h3>
-                    <button id="closeDialog6" onclick="closeDialog6()">X</button>
+                    <button id="closeDialog6" onclick="closeDialog('trailDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/kanenori-trail-8117575.jpg" alt="Trail">
@@ -141,10 +141,10 @@
         </div>
 
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog7">
+            <dialog class="modal" id="castleDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>leolevng-castle-5476737.jpg</h3>
-                    <button id="closeDialog7" onclick="closeDialog7()">X</button>
+                    <button id="closeDialog7" onclick="closeDialog('castleDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/leolevng-castle-5476737.jpg" alt="Castle">
@@ -158,10 +158,10 @@
             </dialog>
         </div>
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog8">
+            <dialog class="modal" id="rainforestDialog">
                 <header class="dialog_header" id="dialogHeader">
-                    <h3>leolevng-castle-5476737.jpg</h3>
-                    <button id="closeDialog8" onclick="closeDialog8()">X</button>
+                    <h3>kanenori-rainforest-4350845.jpg</h3>
+                    <button id="closeDialog8" onclick="closeDialog('rainforestDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/kanenori-rainforest-4350845.jpg" alt="Rainforest">
@@ -175,10 +175,10 @@
         </div>
 
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog9">
+            <dialog class="modal" id="dubaiDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>marucha-dubai-3188864_1920.jpg</h3>
-                    <button id="closeDialog9" onclick="closeDialog9()">X</button>
+                    <button id="closeDialog9" onclick="closeDialog('dubaiDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/marucha-dubai-3188864_1920.jpg" alt="Dubai">
@@ -191,10 +191,10 @@
             </dialog>
         </div>
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog10">
+            <dialog class="modal" id="aiGeneratedDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>raniramli-ai-generated-8498983.png</h3>
-                    <button id="closeDialog10" onclick="closeDialog10()">X</button>
+                    <button id="closeDialog10" onclick="closeDialog('aiGeneratedDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/raniramli-ai-generated-8498983.png" alt="AI Generated">
@@ -207,10 +207,10 @@
             </dialog>
         </div>
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog11">
+            <dialog class="modal" id="landscapeDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>rperucho-building-10122862_1920.jpg</h3>
-                    <button id="closeDialog11" onclick="closeDialog11()">X</button>
+                    <button id="closeDialog11" onclick="closeDialog('landscapeDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/rperucho-building-10122862_1920.jpg" alt="Building">
@@ -223,10 +223,10 @@
             </dialog>
         </div>
         <div class="mySlides">
-            <dialog class="modal" id="photoDialog12">
+            <dialog class="modal" id="hurricaneDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>wikiimages-hurricane-benilde-58071.jpg</h3>
-                    <button id="closeDialog12" onclick="closeDialog12()">X</button>
+                    <button id="closeDialog12" onclick="closeDialog('hurricaneDialog')">X</button>
                 </header>
                 <main class="dialog_main">
                     <img src="./img/wikiimages-hurricane-benilde-58071.jpg" alt="Hurricane">
