@@ -1,15 +1,15 @@
 // Öffnet den Dialog anhand seiner ID
-function openDialog(dialogId) {
-    const dialogRef = document.getElementById(dialogId);
-    dialogRef.showModal();
-    dialogRef.classList.add('opened');
+function openDialog(dialogId) { // Funktion zum Öffnen eines Dialogs basierend auf seiner ID
+    const dialogRef = document.getElementById(dialogId); // Ruft das Dialogelement anhand der übergebenen ID ab
+    dialogRef.showModal(); // Öffnet den Dialog im Modal-Modus
+    dialogRef.classList.add('opened'); // Fügt dem Dialog die Klasse 'opened' hinzu, um anzuzeigen, dass er geöffnet ist
 }
 
 // Schließt den Dialog anhand seiner ID
-function closeDialog(dialogId) {
-    const dialogRef = document.getElementById(dialogId);
-    dialogRef.close();
-    dialogRef.classList.remove('opened');
+function closeDialog(dialogId) { // Funktion zum Schließen eines Dialogs basierend auf seiner ID
+    const dialogRef = document.getElementById(dialogId); // Ruft das Dialogelement anhand der übergebenen ID ab
+    dialogRef.close(); // Schließt den Dialog
+    dialogRef.classList.remove('opened'); // Entfernt die Klasse 'opened' vom Dialog, um anzuzeigen, dass er geschlossen ist
 }
 
 //Dialog schließen mit Escape-Taste
