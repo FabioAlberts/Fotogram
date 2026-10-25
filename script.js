@@ -147,6 +147,16 @@ const dialogRef12 = document.getElementById('photoDialog12')
         dialogRef12.classList.remove('opened');
     }
 
+//Dialog schließen mit Escape-Taste
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const openDialog = document.querySelector('dialog[open]');
+        if (openDialog) {
+            openDialog.close();
+        }
+    }
+});
+
 // Funktion zum Wechseln der Dialoge
 
 let currentDialogIndex = 0;
