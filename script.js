@@ -1,3 +1,11 @@
+//Bildschirm anpassen
+function adjustScreen() {
+    const screenWidth = window.innerWidth; // Ruft die aktuelle Breite des Browserfensters ab
+    const screenHeight = window.innerHeight; // Ruft die aktuelle Höhe des Browserfensters ab
+
+    // Anpassung der Bildschirmgröße
+}
+
 // Öffnet den Dialog anhand seiner ID
 let currentDialogIndex = 0;
 
