@@ -9,7 +9,7 @@ body {
     color: #FFFFFF;
 }
 
-header {
+.header {
     background-color: #09212A;
     padding:  20px 140px 20px 140px;
     border-radius: 20px;
@@ -23,7 +23,7 @@ header h1 {
     justify-content: flex-start;
 }
 
-main {
+.main {
     border: orange 2px solid;
     border-radius: 20px;
 }
@@ -75,7 +75,7 @@ main {
     border-radius: 16px;
 }
 
-footer {
+.footer {
     background-color: #09212A;
     padding: 48px 140px 48px 140px;
     text-align: center;
@@ -164,4 +164,17 @@ button#closeDialog {
 .modal.opened::backdrop {
     opacity: 1;
     transition: all 0s ease-in;
+}
+
+@media (max-width: 1300px) {
+    .headline {
+        font-size: 48px;
+    }
+
+    .img-button img {
+        width: 120px;
+        height: 120px;
+    }
+
+    
 }
