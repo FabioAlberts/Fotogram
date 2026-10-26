@@ -16,23 +16,28 @@
         </div>
         <div class="gallery">
             <section class="first_row">
-                <img src="./img/12019-hurricane-92968.jpg" alt="Hurricane" onclick="openDialog('hurricaneDialog')">
-                <img src="./img/chikilino-turtle-5568624_1920.jpg" alt="Turtle" onclick="openDialog('turtleDialog')">
-                <img src="./img/corgaasbeek-lamb-3341618_1920.jpg" alt="Lamb" onclick="openDialog('lambDialog')">
-                <img src="./img/kanenori-lake-7938396.jpg" alt="Lake" onclick="openDialog('lakeDialog')">
-                <img src="./img/kanenori-landscape-7534634.jpg" alt="Landscape" onclick="openDialog('landscapeDialog')">
-                <img src="./img/kanenori-trail-8117575.jpg" alt="Trail" onclick="openDialog('trailDialog')">
-                <img src="./img/leolevng-castle-5476737.jpg" alt="Castle" onclick="openDialog()">
+                <img src="./img/12019-hurricane-92968.jpg" alt="Hurricane" onclick="openDialog('dialog1')">
+                <img src="./img/chikilino-turtle-5568624_1920.jpg" alt="Turtle" onclick="openDialog('dialog2')">
+                <img src="./img/corgaasbeek-lamb-3341618_1920.jpg" alt="Lamb" onclick="openDialog('dialog3')">
+                <img src="./img/kanenori-lake-7938396.jpg" alt="Lake" onclick="openDialog('dialog4')">
+                <img src="./img/kanenori-landscape-7534634.jpg" alt="Landscape" onclick="openDialog('dialog5')">
+                <img src="./img/kanenori-trail-8117575.jpg" alt="Trail" onclick="openDialog('dialog6')">
+                <img src="./img/leolevng-castle-5476737.jpg" alt="Castle" onclick="openDialog('dialog7')">
             </section>
             <section class="second_row">
-                <img src="./img/kanenori-rainforest-4350845.jpg" alt="Rainforest" onclick="openDialog('rainforestDialog')">
-                <img src="./img/marucha-dubai-3188864_1920.jpg" alt="Dubai" onclick="openDialog('dubaiDialog')">
-                <img src="./img/raniramli-ai-generated-8498983.png" alt="AI Generated" onclick="openDialog('aiGeneratedDialog')">
-                <img src="./img/rperucho-building-10122862_1920.jpg" alt="Building" onclick="openDialog('buildingDialog')">
-                <img src="./img/wikiimages-hurricane-benilde-58071.jpg" alt="Hurricane" onclick="openDialog('hurricaneDialog')">
+                <img src="./img/kanenori-rainforest-4350845.jpg" alt="Rainforest" onclick="openDialog('dialog8')">
+                <img src="./img/marucha-dubai-3188864_1920.jpg" alt="Dubai" onclick="openDialog('dialog9')">
+                <img src="./img/raniramli-ai-generated-8498983.png" alt="AI Generated" onclick="openDialog('dialog10')">
+                <img src="./img/rperucho-building-10122862_1920.jpg" alt="Building" onclick="openDialog('dialog11')">
+                <img src="./img/wikiimages-hurricane-benilde-58071.jpg" alt="Hurricane" onclick="openDialog('dialog12')">
             </section>           
         </div>
-        <div class="mySlides">
+
+        <div id="dialogContainer">
+            <!-- Dialoge werden hier dynamisch eingefügt -->
+        </div>
+
+        <!-- <div class="mySlides">
             <dialog class="modal" id="hurricaneDialog">
                 <header class="dialog_header" id="dialogHeader">
                     <h3>12019-hurricane-92968.jpg</h3>
@@ -237,7 +242,7 @@
                     <button class="arrow" class="next" onclick="changeDialog(1)">&rarr;</button>
                 </footer>
             </dialog>
-        </div>
+        </div> -->
      </main>
      <footer>
         <img src="./img/Icon.png" alt="Fotogram Logo" class="footer_logo">
