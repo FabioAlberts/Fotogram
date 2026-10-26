@@ -12,6 +12,8 @@ body {
 header {
     background-color: #09212A;
     padding:  20px 140px 20px 140px;
+    border-radius: 20px;
+    border: 2px solid orange;
     
 }
 
@@ -19,6 +21,11 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+main {
+    border: orange 2px solid;
+    border-radius: 20px;
 }
 
 .headline {
@@ -73,6 +80,7 @@ footer {
     padding: 48px 140px 48px 140px;
     text-align: center;
     border-radius: 20px;
+    border: 2px solid orange;
     height: 128px;
 }
 
