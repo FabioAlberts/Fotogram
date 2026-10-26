@@ -59,10 +59,10 @@ const dialogData = [
     {counter: 2, title: "Turtle", image: "./img/chikilino-turtle-5568624_1920.jpg", },
     {counter: 3, title: "Lamb", image: "./img/corgaasbeek-lamb-3341618_1920.jpg", },
     {counter: 4, title: "Lake", image: "./img/kanenori-lake-7938396.jpg", },
-    {counter: 5, title: "Landscape", image: "./img/kanenori-landscape-7938395.jpg", },
+    {counter: 5, title: "Landscape", image: "./img/kanenori-landscape-7534634.jpg", },
     {counter: 6, title: "Trail", image: "./img/kanenori-trail-8117575.jpg", },
     {counter: 7, title: "Castle", image: "./img/leolevng-castle-5476737.jpg", },
-    {counter: 8, title: "Rainforest", image: "./img/kanenori-rainforest-7938397.jpg", },
+    {counter: 8, title: "Rainforest", image: "./img/kanenori-rainforest-4350845.jpg", },
     {counter: 9, title: "Dubai", image: "./img/marucha-dubai-3188864_1920.jpg", },
     {counter: 10, title: "AI-Generated", image: "./img/raniramli-ai-generated-8498983.png", },
     {counter: 11, title: "Building", image: "./img/rperucho-building-10122862_1920.jpg", },
@@ -78,7 +78,7 @@ dialogData.forEach(data => { // Durchläuft jedes Element im dialogData-Array
     totalHTML += ` 
         <dialog class="modal" id="dialog${data.counter}" aria-labelledby="dialogTitle" aria-describedby="dialogDescription" tabindex="-1">
                 <header class="dialog_header" id="dialogHeader">
-                    <h3 id="dialogTitle">${data.title}</h3>
+                    <h3 class="dialogTitle" id="dialogTitle">${data.title}</h3>
                     <button id="closeDialog" onclick="closeDialog('dialog${data.counter}')">X</button>
                 </header>
                 <main class="dialog_main" id="dialogDescription">

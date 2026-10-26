@@ -1,3 +1,9 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 body {
     background-color: #06171E;
     color: #FFFFFF;
@@ -38,14 +44,14 @@ header h1 {
 .first_row {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 48px;
+    margin-bottom: 64px;
 }
 
 
 .second_row {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 48px;
+    margin-bottom: 64px;
 }
 
 .img-button {
@@ -78,8 +84,6 @@ footer {
     width: 720px;
     height: 540px;
     border: 2px solid black;
-    transform: translateX(0px);
-    transition: all 5s ease-in;
 }
 
 .modal.show {
@@ -94,9 +98,15 @@ footer {
     background-color: #06171E;
 }
 
+.dialogTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+}
+
 button#closeDialog {
     background-color: #06171E;
-    color: white;
+    color: orange;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -126,7 +136,7 @@ button#closeDialog {
     background-color: #06171E;
 }
 
-.arrow {
+.arrow-prev, .arrow-next {
     height: 40px;
     width: 40px;
     margin: 20px 20px;
