@@ -24,6 +24,34 @@ function closeDialog(dialogId) { // Funktion zum Schließen eines Dialogs basier
     }
 }
 
+// Funktion fokussiert den Dialog, wenn er geöffnet wird
+function focusDialog(dialogId) {
+  if (!isNaN(dialogId)) {
+    dialogId = 'dialog' + dialogId;
+  }
+  
+  const dialogRef = document.getElementById(dialogId);
+  
+  if (dialogRef) {
+    dialogRef.focus();
+    
+    
+    if (!dialogRef.dataset.keyboardBound) {
+      dialogRef.addEventListener('keydown', function(event) {
+        
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();   
+          
+          
+          console.log('Dialog geöffnet/bestätigt per Tastatur');
+          
+        }
+      });
+      
+      dialogRef.dataset.keyboardBound = "true";
+    }
+  }
+}
 
 // Array mit den Daten für die Dialoge
 const dialogData = [
@@ -48,12 +76,12 @@ let totalHTML = "";
 
 dialogData.forEach(data => { // Durchläuft jedes Element im dialogData-Array
     totalHTML += ` 
-        <dialog class="modal" id="dialog${data.counter}">
+        <dialog class="modal" id="dialog${data.counter}" aria-labelledby="dialogTitle" aria-describedby="dialogDescription" tabindex="-1">
                 <header class="dialog_header" id="dialogHeader">
-                    <h3>${data.title}</h3>
+                    <h3 id="dialogTitle">${data.title}</h3>
                     <button id="closeDialog" onclick="closeDialog('dialog${data.counter}')">X</button>
                 </header>
-                <main class="dialog_main">
+                <main class="dialog_main" id="dialogDescription">
                     <img src="${data.image}" alt="${data.title}">
                 </main>
                 <footer class="dialog_footer">
