@@ -29,7 +29,7 @@ function closeDialog(dialogId) { // Funktion zum Schließen eines Dialogs basier
     const dialogRef = document.getElementById(dialogId); // Ruft das Dialogelement anhand der ID ab
     if (dialogRef) { // Überprüft, ob das Dialogelement existiert 
         dialogRef.close(); // Versteckt das Fenster wieder
-        dialogRef.style.display = 'none'; // Setzt die Anzeige auf 'none', um das Fenster zu verbergen
+        
     }
 }
 
