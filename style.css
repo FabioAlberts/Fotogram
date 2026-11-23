@@ -98,10 +98,6 @@ header h1 {
     border: 2px solid black;
 }
 
-.modal.show {
-    display: block; !important;
-}
-
 .dialog_header {
     display: flex;
     justify-content: space-between;
