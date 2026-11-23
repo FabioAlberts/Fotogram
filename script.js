@@ -17,7 +17,7 @@ function openDialog(dialogId) { // Funktion zum Öffnen eines Dialogs basierend 
     const dialogRef = document.getElementById(dialogId); // Ruft das Dialogelement anhand der ID ab
     if (dialogRef) { // Überprüft, ob das Dialogelement existiert
         dialogRef.showModal(); // Öffnet das Dialogfenster
-        dialogRef.classList.add('show'); // Macht das Fenster sichtbar
+        dialogRef.classList.add('open'); // Macht das Fenster sichtbar
         currentDialogIndex = parseInt(dialogId.replace('dialog', '')); // Aktualisiert den aktuellen Dialogindex basierend auf der ID
     }
 }
@@ -29,7 +29,7 @@ function closeDialog(dialogId) { // Funktion zum Schließen eines Dialogs basier
     const dialogRef = document.getElementById(dialogId); // Ruft das Dialogelement anhand der ID ab
     if (dialogRef) { // Überprüft, ob das Dialogelement existiert 
         dialogRef.close(); // Versteckt das Fenster wieder
-        
+        dialogRef.classList.remove('open'); // Macht das Fenster unsichtbar
     }
 }
 
@@ -64,18 +64,18 @@ function focusDialog(dialogId) {
 
 // Array mit den Daten für die Dialoge
 const dialogData = [
-    {counter: 1, title: "Hurricane", image: "./img/12019-hurricane-92968.jpg", },
-    {counter: 2, title: "Turtle", image: "./img/chikilino-turtle-5568624_1920.jpg", },
-    {counter: 3, title: "Lamb", image: "./img/corgaasbeek-lamb-3341618_1920.jpg", },
-    {counter: 4, title: "Lake", image: "./img/kanenori-lake-7938396.jpg", },
-    {counter: 5, title: "Landscape", image: "./img/kanenori-landscape-7534634.jpg", },
-    {counter: 6, title: "Trail", image: "./img/kanenori-trail-8117575.jpg", },
-    {counter: 7, title: "Castle", image: "./img/leolevng-castle-5476737.jpg", },
-    {counter: 8, title: "Rainforest", image: "./img/kanenori-rainforest-4350845.jpg", },
-    {counter: 9, title: "Dubai", image: "./img/marucha-dubai-3188864_1920.jpg", },
-    {counter: 10, title: "AI-Generated", image: "./img/raniramli-ai-generated-8498983.png", },
-    {counter: 11, title: "Building", image: "./img/rperucho-building-10122862_1920.jpg", },
-    {counter: 12, title: "Hurricane Two", image: "./img/wikiimages-hurricane-benilde-58071.jpg", }
+    {counter: 1, title: "Hurricane", image: "./img/Beatboxing.jpg", },
+    {counter: 2, title: "Turtle", image: "./img/Bible2.jpg", },
+    {counter: 3, title: "Lamb", image: "./img/Cop_Cat.jpg", },
+    {counter: 4, title: "Lake", image: "./img/Deamon.jpg", },
+    {counter: 5, title: "Landscape", image: "../img/Exit.jpg", },
+    {counter: 6, title: "Trail", image: "./img/Hochmut.jpg", },
+    {counter: 7, title: "Castle", image: "./img/Holy_Shot.jpg", },
+    {counter: 8, title: "Rainforest", image: "./img/I_know.jpg", },
+    {counter: 9, title: "Dubai", image: "./img/Jakob.jpg", },
+    {counter: 10, title: "AI-Generated", image: "./img/Oh_god.jpg", },
+    {counter: 11, title: "Building", image: "./img/Wii_Will.jpg", },
+    {counter: 12, title: "Hurricane Two", image: "./img/Feuerstoss.jpg", }
 ];
 
 const container = document.getElementById('dialogContainer'); // Ruft das Container-Element ab, in dem die Dialoge eingefügt werden
