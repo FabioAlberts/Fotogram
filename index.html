@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotogram</title>
-    <link rel="icon" href="./img/group.png" type="image/png">
+    <link rel="icon" href="./img/group.png?v=2" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -20,22 +20,8 @@
             <h2>Your personal Meme Gallery</h2>
         </div>
         <div class="gallery">
-            <section class="first_row">
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog1')"><img src="./img/Beatboxing.jpg" alt="Beatboxing" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog2')"><img src="./img/Bible2.jpg" alt="Bible" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog3')"><img src="./img/Cop_Cat.jpg" alt="Cop Cat" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog4')"><img src="./img/Deamon.jpg" alt="Deamon" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog5')"><img src="./img/Exit.jpg" alt="Exit" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog6')"><img src="./img/Hochmut.jpg" alt="Hochmut" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog7')"><img src="./img/Holy_Shot.jpg" alt="Holy Shot" aria-haspopup="dialog"></button>
-            </section>
-            <section class="second_row">
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog8')"><img src="./img/I_know.jpg" alt="I know" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog9')"><img src="./img/Jakob.jpg" alt="Jakob" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog10')"><img src="./img/Oh_god.jpg" alt="Oh god" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog11')"><img src="./img/Wii_Will.jpg" alt="Wii Will" aria-haspopup="dialog"></button>
-                <button class="img-button" tabindex="0" onclick="openDialog('dialog12')"><img src="./img/Feuerstoss.jpg" alt="Feuerstoss" aria-haspopup="dialog "></button>
-            </section>      
+            <section id="firstSection" class="first_row"></section>
+            <section id="secondSection" class="second_row"></section>
         </div>
 
         <div id="dialogContainer">

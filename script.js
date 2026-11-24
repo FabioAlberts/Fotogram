@@ -1,3 +1,57 @@
+const firstThumbnailData = [
+    {id: "beatboxing", image: "./img/Beatboxing.jpg", title: "Beatboxing"},
+    {id: "bible", image: "./img/Bible2.jpg", title: "Bible"},
+    {id: "cop-cat", image: "./img/Cop_Cat.jpg", title: "Cop Cat"},
+    {id: "deamon", image: "./img/Deamon.jpg", title: "Deamon"},
+    {id: "exit", image: "./img/Exit.jpg", title: "Exit"},
+    {id: "hochmut", image: "./img/Hochmut.jpg", title: "Hochmut"},
+    {id: "holy-shot", image: "./img/Holy_Shot.jpg", title: "Holy Shot"},
+];
+
+const galleryContainer = document.getElementById('firstSection'); // Ruft das Container-Element ab, in dem die Thumbnails eingefügt werden
+
+// Variable zum Speichern des gesamten HTML-Codes für die Thumbnails
+let totalfirstThumbnailHTML = "";
+
+// Funktion zum Erstellen der Thumbnail-Elemente
+
+    firstThumbnailData.forEach(data => {
+        totalfirstThumbnailHTML += `
+            
+                <button class="img-button" tabindex="0" onclick="openDialog('${data.id}')"><img src="${data.image}" alt="${data.title}" aria-haspopup="dialog"></button>
+            
+            
+        `;
+    });
+    firstSection.innerHTML = totalfirstThumbnailHTML;
+
+    //Zweite Galerie
+const secondThumbnailData = [
+    
+    {id: "i-know", image: "./img/I_know.jpg", title: "I know"},
+    {id: "jakob", image: "./img/Jakob.jpg", title: "Jakob"},
+    {id: "oh-god", image: "./img/Oh_god.jpg", title: "Oh god"},
+    {id: "wii-will", image: "./img/Wii_Will.jpg", title: "Wii Will"},
+    {id: "feuerstoss", image: "./img/Feuerstoss.jpg", title: "Feuerstoss"}
+];
+
+const secondGalleryContainer = document.getElementById('secondSection'); // Ruft das Container-Element ab, in dem die Thumbnails eingefügt werden
+
+// Variable zum Speichern des gesamten HTML-Codes für die Thumbnails
+let totalSecondThumbnailHTML = "";
+
+// Funktion zum Erstellen der Thumbnail-Elemente
+    secondThumbnailData.forEach(data => {
+        totalSecondThumbnailHTML += `
+            
+                <button class="img-button" tabindex="0" onclick="openDialog('${data.id}')"><img src="${data.image}" alt="${data.title}" aria-haspopup="dialog"></button>
+            
+            
+        `;
+    });
+    secondSection.innerHTML = totalSecondThumbnailHTML;
+
+
 //Bildschirm anpassen
 function adjustScreen() {
     const screenWidth = window.innerWidth; // Ruft die aktuelle Breite des Browserfensters ab
@@ -64,18 +118,18 @@ function focusDialog(dialogId) {
 
 // Array mit den Daten für die Dialoge
 const dialogData = [
-    {counter: 1, title: "Hurricane", image: "./img/Beatboxing.jpg", },
-    {counter: 2, title: "Turtle", image: "./img/Bible2.jpg", },
-    {counter: 3, title: "Lamb", image: "./img/Cop_Cat.jpg", },
-    {counter: 4, title: "Lake", image: "./img/Deamon.jpg", },
-    {counter: 5, title: "Landscape", image: "../img/Exit.jpg", },
-    {counter: 6, title: "Trail", image: "./img/Hochmut.jpg", },
-    {counter: 7, title: "Castle", image: "./img/Holy_Shot.jpg", },
-    {counter: 8, title: "Rainforest", image: "./img/I_know.jpg", },
-    {counter: 9, title: "Dubai", image: "./img/Jakob.jpg", },
-    {counter: 10, title: "AI-Generated", image: "./img/Oh_god.jpg", },
-    {counter: 11, title: "Building", image: "./img/Wii_Will.jpg", },
-    {counter: 12, title: "Hurricane Two", image: "./img/Feuerstoss.jpg", }
+    {counter: 1, id: "beatboxing", title: "Beatboxing", image: "./img/Beatboxing.jpg", },
+    {counter: 2, id: "bible", title: "Bible", image: "./img/Bible2.jpg", },
+    {counter: 3, id: "cop-cat", title: "Cop Cat", image: "./img/Cop_Cat.jpg", },
+    {counter: 4, id: "deamon", title: "Deamon", image: "./img/Deamon.jpg", },
+    {counter: 5, id: "exit", title: "Exit", image: "../img/Exit.jpg", },
+    {counter: 6, id: "hochmut", title: "Hochmut", image: "./img/Hochmut.jpg", },
+    {counter: 7, id: "holy-shot", title: "Holy Shot", image: "./img/Holy_Shot.jpg", },
+    {counter: 8, id: "i-know", title: "I know", image: "./img/I_know.jpg", },
+    {counter: 9, id: "jakob", title: "Jakob", image: "./img/Jakob.jpg", },
+    {counter: 10, id: "oh-god", title: "Oh god", image: "./img/Oh_god.jpg", },
+    {counter: 11, id: "wii-will", title: "Wii Will", image: "./img/Wii_Will.jpg", },
+    {counter: 12, id: "feuerstoss", title: "Feuerstoss", image: "./img/Feuerstoss.jpg", }
 ];
 
 const container = document.getElementById('dialogContainer'); // Ruft das Container-Element ab, in dem die Dialoge eingefügt werden
@@ -85,10 +139,10 @@ let totalHTML = "";
 
 dialogData.forEach(data => { // Durchläuft jedes Element im dialogData-Array
     totalHTML += ` 
-        <dialog class="modal" id="dialog${data.counter}" aria-labelledby="dialogTitle" aria-describedby="dialogDescription" tabindex="-1">
+        <dialog class="modal" id="${data.id}" aria-labelledby="dialogTitle" aria-describedby="dialogDescription" tabindex="-1">
                 <header class="dialog_header" id="dialogHeader">
                     <h3 class="dialogTitle" id="dialogTitle">${data.title}</h3>
-                    <button id="closeDialog" onclick="closeDialog('dialog${data.counter}')">X</button>
+                    <button id="closeDialog" onclick="closeDialog('dialog${data.id}')">X</button>
                 </header>
                 <main class="dialog_main" id="dialogDescription">
                     <img src="${data.image}" alt="${data.title}">
