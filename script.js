@@ -163,7 +163,7 @@ container.innerHTML = totalHTML; // Fügt den gesamten HTML-Code für die Dialog
 container.innerHTML = totalHTML; // Fügt den gesamten HTML-Code für die Dialoge in das Container-Element ein
 
 // Call the function to initialize arrow button event listeners
-initArrowButtons();
+
 
 
 function changeDialog(direction) { // Funktion zum Wechseln zwischen den Dialogen
