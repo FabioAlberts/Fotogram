@@ -92,26 +92,16 @@ function focusDialog(dialogId) {
   if (!isNaN(dialogId)) {
     dialogId = 'dialog' + dialogId;
   }
-  
   const dialogRef = document.getElementById(dialogId);
-  
-  if (dialogRef) {
-    dialogRef.focus();
-    
-    
+    if (dialogRef) {
+    dialogRef.focus();   
     if (!dialogRef.dataset.keyboardBound) {
-      dialogRef.addEventListener('keydown', function(event) {
-        
+      dialogRef.addEventListener('keydown', function(event) {       
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault();   
-          
-          
-          console.log('Dialog geöffnet/bestätigt per Tastatur');
-          
-        }
+          }
       });
-      
-      dialogRef.dataset.keyboardBound = "true";
+            dialogRef.dataset.keyboardBound = "true";
     }
   }
 }
