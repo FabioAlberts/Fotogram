@@ -7,13 +7,16 @@ html {
 body {
     background-color: #06171E;
     color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     background-color: #09212A;
     padding:  20px 140px 20px 140px;
-    border-radius: 20px;
-    border: 2px solid orange;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -33,9 +36,12 @@ header h1 {
     padding-left: 20px;
 }
 
+main {
+    flex: 1;
+}
+
 .main {
-    border: orange 2px solid;
-    border-radius: 20px;
+    
 }
 
 .headline {
@@ -78,7 +84,10 @@ header h1 {
     background-color: #06171E;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 0px;
+    width: 240px;
+    height: 240px;
+    
 }
 
 .img-button img {
@@ -98,8 +107,6 @@ header h1 {
     background-color: #09212A;
     padding: 48px 140px 48px 140px;
     text-align: center;
-    border-radius: 20px;
-    border: 2px solid orange;
     height: 128px;
 }
 
@@ -223,8 +230,8 @@ button#closeDialog {
     }
 
     .img-button img {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -235,9 +242,14 @@ button#closeDialog {
         justify-content: center;
     }
 
+    .img-button {
+        width: 120px;
+        height: 120px;
+    }
+
     .img-button img {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
 
     .gallery {
@@ -270,6 +282,16 @@ button#closeDialog {
         justify-content: space-between;
         gap: 20px;
         
+    }
+
+    .img-button {
+        width: 120px;
+        height: 120px;
+    }
+
+    .img-button img {
+        width: 68px;
+        height: 68px;
     }
 
     .footer {
