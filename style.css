@@ -188,6 +188,16 @@ button#closeDialog {
     transition: all 0s ease-in;
 }
 
+@media (min-width: 4000px) {
+    
+    .main {
+        max-width: 3800px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 3800px) {
     .header {
         padding: 20px 800px 20px 800px;
@@ -197,6 +207,13 @@ button#closeDialog {
     .header img {
         width: 80px;
         height: 80px;
+    }
+
+    .main {
+        max-width: 3600px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
     }
 
     .headline {
@@ -232,6 +249,13 @@ button#closeDialog {
 }
 
 @media (min-width: 3100px) {
+.main {
+        max-width: 3000px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
     .header {
         padding: 20px 600px 20px 600px;
         font-size: 32px;
