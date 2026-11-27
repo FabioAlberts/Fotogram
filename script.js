@@ -162,6 +162,29 @@ container.innerHTML = totalHTML; // Fügt den gesamten HTML-Code für die Dialog
 // Erst nach der Schleife das HTML einfügen
 container.innerHTML = totalHTML; // Fügt den gesamten HTML-Code für die Dialoge in das Container-Element ein
 
+// Call the function to initialize arrow button event listeners
+initArrowButtons();
+
+
+function changeDialog(direction) { // Funktion zum Wechseln zwischen den Dialogen
+    const currentDialog = document.querySelector('dialog[open]'); // Ruft den aktuell geöffneten Dialog ab
+    if (currentDialog) { // Überprüft, ob ein Dialog geöffnet ist
+        const currentIndex = dialogData.findIndex(data => data.id === currentDialog.id); // Findet den Index des aktuell geöffneten Dialogs im dialogData-Array
+        let newIndex = currentIndex + direction; // Berechnet den neuen Index basierend auf der Richtung (vorwärts oder rückwärts)
+        if (newIndex < 0) { // Überprüft, ob der neue Index kleiner als 0 ist (d.h. vor dem ersten Dialog)
+            newIndex = dialogData.length - 1; // Setzt den Index auf den letzten Dialog, wenn der neue Index kleiner als 0 ist
+        } else if (newIndex >= dialogData.length) { // Überprüft, ob der neue Index größer oder gleich der Länge des dialogData-Arrays ist (d.h. nach dem letzten Dialog)
+            newIndex = 0; // Setzt den Index auf den ersten Dialog, wenn der neue Index größer oder gleich der Länge des Arrays ist
+        }
+        const newDialog = document.getElementById(dialogData[newIndex].id);// Ruft den neuen Dialog basierend auf dem berechneten Index ab
+        if (newDialog) {// Überprüft, ob der neue Dialog existiert
+            currentDialog.close();// Schließt den aktuell geöffneten Dialog
+            newDialog.showModal();// Öffnet den neuen Dialog
+        }
+    }
+}
+
+
 //Dialog schließen mit Escape-Taste
 document.addEventListener('keydown', function(event) {// Überprüfen, ob die Escape-Taste gedrückt wurde
     if (event.key === 'Escape') {//Überprüft ob Esc gedrückt wurde, wenn ja wird der offene Dialog geschlossen
@@ -184,24 +207,3 @@ allDialogs.forEach(dialog => {// Durchläuft alle Dialogelemente
     });
 });
 
-// Funktion zum Wechseln der Dialoge
-function changeDialog(direction) {// Funktion zum Wechseln der Dialoge basierend auf der Richtung (vorwärts oder rückwärts)
-
-
-const dialogs = document.querySelectorAll(`${data.id}`);// Alle Dialogelemente auf der Seite abrufen
-const currentDialog = dialogs[currentDialogIndex]; // Ruft den aktuellen Dialog basierend auf dem aktuellen Index ab
-if (currentDialog && currentDialog.open) { // Überprüft, ob der aktuelle Dialog geöffnet ist
-    currentDialog.close();// Schließt den aktuellen Dialog
-}
-
-currentDialogIndex += direction;// Ändert den aktuellen Dialogindex basierend auf der Richtung
-if (currentDialogIndex >= dialogs.length) {// Überprüft, ob der Index den Bereich überschreitet
-    currentDialogIndex = 0;// Setzt den Index auf 0, um zum ersten Dialog zurückzukehren
-}
-if (currentDialogIndex < 0) {// Überprüft, ob der Index negativ ist
-    currentDialogIndex = dialogs.length - 1;// Setzt den Index auf den letzten Dialog, um zum letzten Dialog zurückzukehren
-}
-
-dialogs[currentDialogIndex].showModal();// Öffnet den neuen Dialog basierend auf dem aktualisierten Index
-}
-//Es frfunktioniert und wird auch nicht mehr angefasst!!!
