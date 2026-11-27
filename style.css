@@ -63,6 +63,7 @@ header h1 {
     align-items: center;
     margin-bottom: 150px;
     padding: 0 20px;
+    gap: 20px;
 }
 
 
@@ -77,20 +78,20 @@ header h1 {
     background-color: #06171E;
     border: none;
     cursor: pointer;
-    padding: 0 20px;
+    padding: 0;
 }
 
 .img-button img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
 }
 
-.img-button:hover {
-    transform: scale(1.05);
+.thumbnail:hover {
+    transform: scale(1.0);
     transition: transform 0.3s ease-in-out;
     box-shadow: 2px 2px 2px 2px rgb(253, 114, 0);
     border: 2px solid orange;
-    border-radius: 16px;
+    border-radius: 8px;
 }
 
 .footer {

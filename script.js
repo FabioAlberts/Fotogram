@@ -18,7 +18,7 @@ let totalfirstThumbnailHTML = "";
     firstThumbnailData.forEach(data => {
         totalfirstThumbnailHTML += `
             
-                <button class="img-button" tabindex="0" onclick="openDialog('${data.id}')"><img src="${data.image}" alt="${data.title}" aria-haspopup="dialog"></button>
+                <button class="img-button" tabindex="0" onclick="openDialog('${data.id}')"><img class="thumbnail"src="${data.image}" alt="${data.title}" aria-haspopup="dialog"></button>
             
             
         `;
@@ -44,7 +44,7 @@ let totalSecondThumbnailHTML = "";
     secondThumbnailData.forEach(data => {
         totalSecondThumbnailHTML += `
             
-                <button class="img-button" tabindex="0" onclick="openDialog('${data.id}')"><img src="${data.image}" alt="${data.title}" aria-haspopup="dialog"></button>
+                <button class="img-button" tabindex="0" onclick="openDialog('${data.id}')"><img class="thumbnail"src="${data.image}" alt="${data.title}" aria-haspopup="dialog"></button>
             
             
         `;
