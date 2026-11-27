@@ -142,7 +142,7 @@ dialogData.forEach(data => { // Durchläuft jedes Element im dialogData-Array
         <dialog class="modal" id="${data.id}" aria-labelledby="dialogTitle" aria-describedby="dialogDescription" tabindex="-1">
                 <header class="dialog_header" id="dialogHeader">
                     <h3 class="dialogTitle" id="dialogTitle">${data.title}</h3>
-                    <button id="closeDialog" onclick="closeDialog('dialog${data.id}')">X</button>
+                    <button id="closeDialog" onclick="closeDialog('${data.id}')">X</button>
                 </header>
                 <main class="dialog_main" id="dialogDescription">
                     <img src="${data.image}" alt="${data.title}">
@@ -186,22 +186,22 @@ allDialogs.forEach(dialog => {// Durchläuft alle Dialogelemente
 
 // Funktion zum Wechseln der Dialoge
 function changeDialog(direction) {// Funktion zum Wechseln der Dialoge basierend auf der Richtung (vorwärts oder rückwärts)
-    const dialogs = document.querySelectorAll('dialog');// Alle Dialogelemente auf der Seite abrufen
-    if (!dialogs.length) return; // Überprüft, ob Dialoge vorhanden sind, wenn nicht, wird die Funktion beendet
 
-    const currentDialog = dialogs[currentDialogIndex]; // Ruft den aktuellen Dialog basierend auf dem aktuellen Index ab
-    if (currentDialog && currentDialog.open) { // Überprüft, ob der aktuelle Dialog geöffnet ist
-        currentDialog.close();// Schließt den aktuellen Dialog
-    }
 
-    currentDialogIndex += direction;// Ändert den aktuellen Dialogindex basierend auf der Richtung
-    if (currentDialogIndex >= dialogs.length) {// Überprüft, ob der Index den Bereich überschreitet
-        currentDialogIndex = 0;// Setzt den Index auf 0, um zum ersten Dialog zurückzukehren
-    }
-    if (currentDialogIndex < 0) {// Überprüft, ob der Index negativ ist
-        currentDialogIndex = dialogs.length - 1;// Setzt den Index auf den letzten Dialog, um zum letzten Dialog zurückzukehren
-    }
+const dialogs = document.querySelectorAll(`${data.id}`);// Alle Dialogelemente auf der Seite abrufen
+const currentDialog = dialogs[currentDialogIndex]; // Ruft den aktuellen Dialog basierend auf dem aktuellen Index ab
+if (currentDialog && currentDialog.open) { // Überprüft, ob der aktuelle Dialog geöffnet ist
+    currentDialog.close();// Schließt den aktuellen Dialog
+}
 
-    dialogs[currentDialogIndex].showModal();// Öffnet den neuen Dialog basierend auf dem aktualisierten Index
+currentDialogIndex += direction;// Ändert den aktuellen Dialogindex basierend auf der Richtung
+if (currentDialogIndex >= dialogs.length) {// Überprüft, ob der Index den Bereich überschreitet
+    currentDialogIndex = 0;// Setzt den Index auf 0, um zum ersten Dialog zurückzukehren
+}
+if (currentDialogIndex < 0) {// Überprüft, ob der Index negativ ist
+    currentDialogIndex = dialogs.length - 1;// Setzt den Index auf den letzten Dialog, um zum letzten Dialog zurückzukehren
+}
+
+dialogs[currentDialogIndex].showModal();// Öffnet den neuen Dialog basierend auf dem aktualisierten Index
 }
 //Es frfunktioniert und wird auch nicht mehr angefasst!!!
