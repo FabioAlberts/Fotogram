@@ -4,6 +4,10 @@ html {
     font-family: 'Ubuntu', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #06171E;
     color: #FFFFFF;
@@ -14,16 +18,22 @@ body {
     flex-direction: column;
 }
 
-.header {
+header {
+    max-width: 100%;   
     background-color: #09212A;
-    padding:  20px 140px 20px 140px;
+}
+
+.header_content {
+    max-width: 1920px;
+    margin: 0 auto; 
+    padding: 20px 140px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     
 }
 
-.header img {
+header img {
     width: 45px;
     height: 45px;
     margin-right: 20px;
@@ -38,6 +48,8 @@ header h1 {
 
 main {
     flex: 1;
+    margin: 0 auto;
+    max-width: 1920px;
 }
 
 .main {
@@ -53,8 +65,8 @@ main {
 }
 
 .gallery{
-    padding: 120px 150px;
-    gap: 48px;
+    padding: 120px 80px;
+    gap: 28px;
 }
 
 .gallery img {
@@ -85,8 +97,8 @@ main {
     border: none;
     cursor: pointer;
     padding: 0px;
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     
 }
 
@@ -104,10 +116,11 @@ main {
 }
 
 .footer {
+    width: 100%;
     background-color: #09212A;
-    padding: 48px 140px 48px 140px;
+    padding: 48px 140px;
     text-align: center;
-    height: 128px;
+    min-height: 128px;
 }
 
 .modal {
@@ -150,8 +163,6 @@ button#closeDialog {
     align-items: center;
 }
 
-
-
 .modal img {
     width: 240px;
     height: 240px;
@@ -188,148 +199,7 @@ button#closeDialog {
     transition: all 0s ease-in;
 }
 
-@media (min-width: 4000px) {
-    
-    .main {
-        max-width: 3800px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-}
 
-@media (min-width: 3800px) {
-    .header {
-        padding: 20px 800px 20px 800px;
-        font-size: 32px;
-    }
-
-    .header img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .main {
-        max-width: 3600px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .headline {
-        font-size: 72px;
-    }
-
-    .img-button {
-        width: 320px;
-        height: 320px;
-    }
-
-    .thumbnail img {
-        width: 280px;
-        height: 280px;
-    }
-
-    .gallery {
-        padding: 120px 600px;
-    }
-
-    .footer {
-        padding: 48px 600px 48px 600px;
-    }
-
-    footer img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .footer p {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 3100px) {
-.main {
-        max-width: 3000px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .header {
-        padding: 20px 600px 20px 600px;
-        font-size: 32px;
-    }
-
-    .header img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .headline {
-        font-size: 72px;
-    }
-
-    .img-button img {
-        width: 220px;
-        height: 220px;
-    }
-
-    .gallery {
-        padding: 120px 400px;
-    }
-
-    .footer {
-        padding: 48px 400px 48px 400px;
-    }
-
-    footer img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .footer p {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 2200px) and (max-width: 3000px) {
-    .header {
-        padding: 20px 400px 20px 400px;
-        font-size: 32px;
-    }
-
-    .header img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .headline {
-        font-size: 72px;
-    }
-
-    .img-button img {
-        width: 220px;
-        height: 220px;
-    }
-
-    .gallery {
-        padding: 120px 200px;
-    }
-
-    .footer {
-        padding: 48px 200px 48px 200px;
-    }
-
-    footer img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .footer p {
-        font-size: 24px;
-    }
-}
 
 @media (max-width: 1500px) {
     .headline {
